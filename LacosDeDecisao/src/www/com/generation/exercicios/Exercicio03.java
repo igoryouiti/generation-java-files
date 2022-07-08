@@ -2,7 +2,7 @@ package www.com.generation.exercicios;
 
 import java.util.Scanner;
 
-public class Exercicio3 {
+public class Exercicio03 {
 	public static void main(String[] args) {
 		/*
 		 * 3- Faça um programa que receba a idade de uma pessoa e mostre na saída em qual
