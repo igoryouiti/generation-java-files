@@ -10,6 +10,8 @@ public class Exercicio02 {
 		 */
 		
 		int number1, number2, number3;
+		int biggestNumber, middleNumber, smallestNumber;
+		
 		
 		Scanner input = new Scanner(System.in);
 		
@@ -26,13 +28,64 @@ public class Exercicio02 {
 		
 		System.out.println("\n");
 		
+		if((number1 > number2 && number1 > number3) || (number1 == number2 && number2 == number3)) {
+			System.out.println("O maior numero digitado foi: " + number1);
+			biggestNumber = number1;
+		} else if(number2 > number3 || number2 == number3) {
+			System.out.println("O maior numero digitado foi: " + number2);
+			biggestNumber = number2;
+		} else {
+			System.out.println("O maior numero digitado foi: " + number3);
+			biggestNumber = number3;
+		}
+		
 		if((number1 < number2 && number1 < number3) || (number1 == number2 && number2 == number3)) {
 			System.out.println("O menor numero digitado foi: " + number1);
+			smallestNumber = number1;
 		} else if(number2 < number3 || number2 == number3) {
 			System.out.println("O menor numero digitado foi: " + number2);
+			smallestNumber = number2;
 		} else {
 			System.out.println("O menor numero digitado foi: " + number3);
+			smallestNumber = number3;
 		}
+		
+		
+		if((number1 < number2 && number1 > number3) || (number1 > number2 && number1 < number3) ||
+			(number1 == number2 && number2 == number3)) {
+			System.out.println("O numero do meio digitado foi: " + number1);
+			middleNumber = number1;
+		} else if((number2 < number3 && number2 > number1) || (number2 > number3 && number2 < number1) ||
+				number2 == number3) {
+			System.out.println("O numero do meio digitado foi: " + number2);
+			middleNumber = number2;
+		} else{
+			System.out.println("O numero do meio digitado foi: " + number3);
+			middleNumber = number3;
+		}
+		
+		
+		if(number1 < number2) {
+			if(number2 < number3) {
+				System.out.println("Numeros em ordem: " + number1 + " - " + number2 + " - " + number3);
+			} else if(number1 < number3) {
+				System.out.println("Numeros em ordem: " + number1 + " - " + number3 + " - " + number2);
+			} else {
+				System.out.println("Numeros em ordem: " + number3 + " - " + number1 + " - " + number2);
+			}
+		} else if(number2 < number3) {
+			if(number1 < number3) {
+				System.out.println("Numeros em ordem: " + number2 + " - " + number1 + " - " + number3);
+			} else {
+				System.out.println("Numeros em ordem: " + number2 + " - " + number3 + " - " + number1);
+			}
+			
+		} else {
+			System.out.println("Numeros em ordem: " + number3 + " - " + number2 + " - " + number1);
+		}
+		
+	
+		
 		
 	}
 
