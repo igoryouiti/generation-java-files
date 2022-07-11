@@ -32,6 +32,7 @@ public class Exercicio03 {
 		System.out.println("Quantidade de pessoas com menos de 21 anos: " + minor21);
 		System.out.println("Quantidade de pessoas com mais de 50 anos: " + plus50);
 		
+		input.close();
 	}
 
 }

@@ -25,6 +25,8 @@ public class Exercicio02 {
 		
 		System.out.println("Quantidade de numeros pares digitados: " + even);
 		System.out.println("Quantidade de numeros ímpares digitados: " + odd);
+		
+		input.close();
 	}
 
 }
