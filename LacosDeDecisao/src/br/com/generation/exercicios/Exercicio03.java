@@ -1,4 +1,4 @@
-package www.com.generation.exercicios;
+package br.com.generation.exercicios;
 
 import java.util.Scanner;
 
