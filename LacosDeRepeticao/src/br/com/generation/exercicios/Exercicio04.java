@@ -73,7 +73,7 @@ public class Exercicio04 {
 		System.out.println("O numero de homens agressives: " + agressiveMen);
 		System.out.println("O numero de outres calmos: " + calmOthers);
 		System.out.println("O numero de pessoas com mais de 40 anos e nervoses: " + nervousPlusForty);
-		System.out.println("O numero de pessoas com menos de 18 anos e calmes: " + nervousPlusForty);
+		System.out.println("O numero de pessoas com menos de 18 anos e calmes: " + calmLessEighteen);
 
 		input.close();
 
